@@ -1,0 +1,46 @@
+.container{
+    display: grid;
+    grid-template-areas:
+    "header header"
+    "profile main"
+    "sidebar main"
+    "sidebar comment"
+    "footer footer"
+    ;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr 2fr 5fr 1fr 4fr;
+    gap: 20px;
+    
+}
+.container div{
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.header{
+    grid-area: header;
+    background-color: aqua;
+
+}
+.profile{
+    grid-area: profile;
+    background-color: greenyellow;
+}
+.sidebar{
+    grid-area: sidebar;
+    background-color: green;
+}
+.main{
+    grid-area: main;
+    background-color: yellow;
+}
+.comment{
+    grid-area: comment;
+    background-color: firebrick;
+}
+.footer{
+    grid-area: footer;
+    background-color: blue;
+}

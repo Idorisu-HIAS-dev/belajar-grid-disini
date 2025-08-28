@@ -1,0 +1,56 @@
+
+.container-grid{
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: 1fr 3fr 1fr;
+    /* gap: 20px; */
+    column-gap: 20px;
+    row-gap: 10px;
+    margin-bottom: 28px;
+}
+.bg-red{
+    background-color: red;
+    color: yellow;
+}
+.bg-orange{
+    background-color: orange;
+    color: yellow;
+}
+.bg-yellow{
+    background-color: yellow;
+    color: blue;
+}
+.bg-purple{
+    background-color: purple;
+    color: yellow;
+}
+.bg-green{
+    background-color: green;
+    color: yellow;
+}
+.bg-blue{
+    background-color: blue;
+    color: yellow;
+}
+.container-grid-2{
+    border: 1px solid black ;
+    border-radius: 25px;
+    margin-bottom: 28px;
+}
+.container-grid-3{
+    display: grid;
+    grid-template-areas: 
+    "utama kedua"
+    "utama kedua"
+    "utama kedua";
+    grid-template-columns:1fr 2fr;
+    grid-template-rows: 15fr 5fr;
+}
+.utama{
+    grid-area: utama;
+    background-color: gold;
+}
+.pendukung{
+    grid-area: kedua;
+    background-color: lawngreen;
+}
